@@ -24,3 +24,24 @@
              ,
             document.getElementById('sohan')
         );
+
+3. React Fragement():
+    we used to handle multiple element within a reneder funcion...it is the most fastest and easiest way of rendering element.
+        ReactDOM.render(
+            <React.Fragment>
+                <h1>Hello world</h1>
+                <p>This is a paragraph.</p>
+                <h2>What is this</h2>
+            </React.Fragment>
+
+            or/
+            <>
+                <h1>Hello world</h1>
+                <p>This is a paragraph.</p>
+                <h2>What is this</h2>
+            </>
+             ,
+            document.getElementById('sohan')
+        );
+       
+
