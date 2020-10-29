@@ -1,0 +1,26 @@
+1.
+    render funcion within ReactDOM contain three parameter:
+        ReactDOM.render(what, where, how);
+
+2. Generally rnender function can handle a single element but we can also handle multiple element within render functiion in two ways:
+    1. div tag:
+        ReactDOM.render(
+
+            <div>
+                <h1>Hello world</h1>
+                <p>This is a paragraph.</p>
+                <h2>What is this</h2>
+            </div>
+            ,
+            document.getElementById('sohan')
+        );
+
+    2. Array of element technique can handle multiple element within render function:
+       ReactDOM.render(
+            [
+                <h1>This is next step</h1>,
+                <p> Job is about done</p>,
+            ]
+             ,
+            document.getElementById('sohan')
+        );
