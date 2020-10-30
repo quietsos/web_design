@@ -43,5 +43,33 @@
              ,
             document.getElementById('sohan')
         );
+
+4. React Expression:
+    Expression is refers to the combination of operator and operend...react allow expression within {} brackets
+
+    const fulname="Md Shohanuzzaman";
+    ReactDOM.render(
+        <React.Fragement>
+        <h1>This is {fulname} <h1>
+        <p>My luckey number is {4+5}</p>
+        </React.Fragement>
+        ,
+        document.getElementById("id_name")
+    
+    );
+
+5. Template Literal is used for using string and javascript simultiniously.
+
+    const fname = "Md";
+    const lname = "Shohanuzzaman";
+
+    ReactDOM.render(
+        <React.Fragement>
+            <p>1st method {fname}{lname}</p>
+            <p>2nd method {fname+lname} </p>
+            <p>3rd method {fname + lname }</p>
+            <p>4th method {`This is first name ${fname} and this is last name ${lname}`}
+        </React.Fragement>
+    )
        
 
