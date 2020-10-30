@@ -72,6 +72,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 
 const fname = "Md";
 const lname = "Shohanuzzaman";
@@ -87,15 +88,19 @@ const link = "https://www.facebook.com/";
 ReactDOM.render(
 
   <React.Fragment>
-    <h1 contentEditable="true"> {`My name is ${fname} ${lname}`}</h1>
-    <p> Todays date is: {date}</p>
-    <p>Current Time is : {time} </p>
-    
-    <img  src={img1} alt="randomImages" />
-    <img  src={img2} alt="randomImages" />
-    <a href={link} target="_blank">
-    <img  src={img3} alt="randomImages" />
+    <h1 className="header"> {`My name is ${fname} ${lname}`}</h1>
+    <div className="date">
+        <p> Todays date is: {date}</p>
+        <p>Current Time is : {time} </p>
+    </div>
+    <div className="img_div">
+      <img  src={img1} alt="randomImages" />
+      <img  src={img2} alt="randomImages" />
+      <a href={link} target="_blank">
+        <img  src={img3} alt="randomImages" />
     </a>
+    </div>
+
 
   </React.Fragment>
   ,

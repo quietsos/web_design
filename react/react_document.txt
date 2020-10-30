@@ -95,5 +95,48 @@
         document.getElementById("id_name)
     )
 
+7. CSS using in React:
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
+const fname = "Md";
+const lname = "Shohanuzzaman";
+const date = new Date().toLocaleDateString(); 
+// var date = d.getDate()+"/"+d.getMonth()+"/"+d.getFullYear();
+const time = new Date().toLocaleTimeString();
+const img1 = "https://picsum.photos/200/300";
+const img2 = "https://picsum.photos/250/300";
+const img3 = "https://picsum.photos/300/300";
+const link = "https://www.facebook.com/";
+
+
+ReactDOM.render(
+
+  <React.Fragment>
+    <h1 className="header"> {`My name is ${fname} ${lname}`}</h1>
+    <div className="date">
+        <p> Todays date is: {date}</p>
+        <p>Current Time is : {time} </p>
+    </div>
+    <div className="img_div">
+      <img  src={img1} alt="randomImages" />
+      <img  src={img2} alt="randomImages" />
+      <a href={link} target="_blank">
+        <img  src={img3} alt="randomImages" />
+    </a>
+    </div>
+
+
+  </React.Fragment>
+  ,
+  document.getElementById('sohan')
+
+
+
+);
+
 
 
