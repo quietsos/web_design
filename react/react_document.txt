@@ -71,5 +71,29 @@
             <p>4th method {`This is first name ${fname} and this is last name ${lname}`}
         </React.Fragement>
     )
-       
+
+6. Template Literal used for handling link and images:
+
+    const title = "This is a image gallery";
+    const img1 = "https://picsum.photos/300/300";
+    const img1 = "https://picsum.photos/200/300";
+    const img3 = "https://picsum.photos/250/300";
+    const link = "www.facebook.com/";
+
+    ReactDOM.render(
+        <React.Fragement>
+        <h1>{title}</h1>
+        <img src={img1} alt="randomImage"/>
+        <img src={img2} alt="randomImage"/>
+        <a href={link} target="_blank">
+        <img src={img3} alt="randomImage"/>
+        </a>
+
+
+        </React.Fragement>
+        ,
+        document.getElementById("id_name)
+    )
+
+
 
