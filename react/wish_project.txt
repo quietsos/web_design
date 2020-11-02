@@ -1,0 +1,38 @@
+
+import React from 'react'
+import ReactDOM from 'react-dom';
+
+
+let curDate = new Date(2020,11,2,22);
+curDate = curDate.getHours();
+let gretting = '';
+const cssStyle = { 
+
+};
+
+if(curDate >=1 && curDate<12){
+  gretting = "Good Morning";
+  cssStyle.color = "green";
+}
+else if(curDate >= 12 && curDate <19){
+  gretting = "Good Afternoon";
+  cssStyle.color = "Orange";
+}
+else{
+  gretting = "Goon Night";
+  cssStyle.color = "black";
+}
+
+
+
+ReactDOM.render(
+<React.Fragment>
+<div style = { {backgroundColor:'white', height:"70px",width:'500px', borderRadius:'25px',margin:'200px 0px 0px 600px'}}>
+<h1 style={{padding:'20px'}}><span style= {{color:'#FFA07A'}}>Hello sir,</span> <span style={cssStyle}>{gretting}</span></h1>
+</div>
+</React.Fragment>
+
+,
+  document.getElementById('sohan')
+  );
+
