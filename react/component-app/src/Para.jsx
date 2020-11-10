@@ -7,7 +7,7 @@ function Para(){
 
    return (
     //    <React.Fragment>
-       <div style= {{backgroundColor:'red', color:'white', width:'200px'}}>
+       <div style= {{backgroundColor:'gray',borderRadius:'20px',padding:'20px', color:'white', width:'200px'}}>
             <p>I am a happy person.</p>
             <p>My friend list is:</p>
             <ol>
