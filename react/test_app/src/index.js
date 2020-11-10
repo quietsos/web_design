@@ -155,9 +155,10 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom';
+import './index.css';
 
 
-let curDate = new Date(2020,11,2,22);
+let curDate = new Date(); //2020,11,2,22
 curDate = curDate.getHours();
 let gretting = '';
 const cssStyle = { 
@@ -181,7 +182,7 @@ else{
 
 ReactDOM.render(
 <React.Fragment>
-<div style = { {backgroundColor:'white', height:"70px",width:'500px', borderRadius:'25px',margin:'200px 0px 0px 600px'}}>
+<div style = { {backgroundColor:'white', height:"70px",width:'500px', borderRadius:'25px',margin:'200px 0px 0px 350px'}}>
 <h1 style={{padding:'20px'}}><span style= {{color:'#FFA07A'}}>Hello sir,</span> <span style={cssStyle}>{gretting}</span></h1>
 </div>
 </React.Fragment>
